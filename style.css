@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+}
+.head h1{
+    font-size:x-large;
+    font-weight:bolder;
+    color:white;
+}
+.parent{
+    width:100%;
+    height: 50vh;
+    position:relative;
+    animation-name: usman;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-fill-mode:both;
+    animation-timing-function: cubic-bezier(1.10,1.10,1.10,1.10);
+    animation-direction: reverse;
+   
+}
+.child1{
+    padding: 10px;
+    font-weight: bold;
+    color:white;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:50%;
+    left:45%;
+}
+.child2{
+    padding: 10px;
+    font-weight: bold;
+    color:white;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:50%;
+    left:47%;
+}
+.child3{
+    padding: 10px;
+    font-weight: bold;
+    color:white;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:50%;
+    left:49%;
+ }
+@keyframes usman {
+    0%{
+        font-size: 20px;
+    }
+    50%{
+        font-size: 100px;
+    }
+    100%{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:450px){
+.parent{
+    width:100%;
+}
+.child1{
+ margin-left:10px;
+}
+.child2{
+    margin-left:10px;
+    
+}
+.child3{
+    margin-left:10px;
+
+    
+}
+}
